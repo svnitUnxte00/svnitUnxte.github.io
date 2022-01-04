@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>svnitUnxte</title>
+	  <link
+      id="favicon"
+      rel="icon"
+      href="/images/BITS UNXTE.png"
+      type="image/x-icon"
+    />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="/css/mystyles.css" rel="stylesheet">
+
+  </head>
+  <body>
+		
+	<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	          <i class="fa fa-bars"></i>
+	          <span class="sr-only">Toggle Menu</span>
+	        </button>
+        </div>
+				<div class="p-4 pt-5">
+					<h1><a href="index.html" class="logo"><h1><a href="index.html" class="logo">SVNIT UNXTE</a></h1></a></h1>
+	        <ul class="list-unstyled components mb-5">
+				<li>
+	            <a href="index.html" aria-expanded="false">Home</a>
+				</li>
+	        
+	          <li>
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Branchwise Filter</a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li>
+                    <a href="cs.html">Btech Computer Science and Engineering</a>
+                </li>
+                <li>
+                    <a href="ece.html">Btech Electronics and Communication Engineering</a>
+                </li>
+                <li>
+                    <a href="eee.html">Btech Electrical Engineering</a>
+                </li>
+                <li>
+                    <a href="mech.html">Btech Mechanical Engineering</a>
+                </li>
+                <li>
+                    <a href="chem.html">Btech Chemical Engineering</a>
+                </li>
+                <li>
+                    <a href="civ.html">Btech Civil Engineering</a>
+                </li>
+                <li>
+                    <a href="phy.html">MSc Physics</a>
+                </li>
+                <li>
+                    <a href="mscchem.html">MSc Chemistry</a>
+                </li>
+                <li>
+                    <a href="math.html">MSc Mathematics</a>
+                </li>
+              </ul>
+	          </li>
+	          <li>
+              <a href="https://docs.google.com/forms/d/1WLGnx6D8ztaSjypqufA2pzv7QudABOQ4IBWiX5BjJCY/edit?usp=sharing">Sign Up</a>
+	          </li>
+	          <li>
+              <a href="about.html">About Us</a>
+	          </li>
+	        </ul>
+
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+
+        <div class="myheader">
+			<h1 class="mb-4">MSc Chemistry</h1>
+			<div class="topnav">
+				<div class="dropdown">
+					<button class="dropbtn" onclick="showall()"> Show all</button>
+				</div>
+				
+				<div class="dropdown">
+				  <button class="dropbtn">Gender
+					<i class="fa fa-caret-down"></i>
+				  </button>
+				  <div class="dropdown-content">
+				  <ul class="items">
+				   <li><input class="fcheckbox" name="gender" value="Male" type="radio" onclick="checkboxupdate()">Male</input></li>
+				   <li><input class="fcheckbox" name="gender" value="Female" type="radio" onclick="checkboxupdate()">Female</input></li>
+				   
+				  </ul>
+				  </div>
+				</div>
+				<div class="dropdown">
+					<button class="dropbtn">Year
+					  <i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+					<ul class="items">
+					 <li><input class="fcheckbox" value="2021" name="year" type="radio" onclick="checkboxupdate()">2021</input></li>
+					 <li><input class="fcheckbox" value="2020" name="year" type="radio" onclick="checkboxupdate()">2020</input></li>
+					 <li><input class="fcheckbox" value="2019" name="year" type="radio" onclick="checkboxupdate()">2019</input></li>
+					 <li><input class="fcheckbox" value="2018" name="year" type="radio" onclick="checkboxupdate()">2018</input></li>
+					 <li><input class="fcheckbox" value="2017" name="year" type="radio" onclick="checkboxupdate()">2017</input></li>
+					 <li><input class="fcheckbox" value="2016" name="year" type="radio" onclick="checkboxupdate()">2016</input></li>
+					 <li><input class="fcheckbox" value="2015" name="year" type="radio" onclick="checkboxupdate()">2015</input></li>
+					</ul>
+					</div>
+				  </div>
+				<div class="search-container">
+				  <form action="javascript:void(0);">
+					<input type="text" id="myInput" onkeyup="searchfunc()" placeholder="Name/City/Interests..." title="Type in a name">
+				  </form>
+				</div>
+			  </div>
+			
+		</div>
+
+        <div class="cards" id="cards">
+			
+			 
+				
+			
+		</div>
+
+      </div>
+	</div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/myjs.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+
+
+	<script>
+		
+
+		function showInfo(results) {
+			var data = results.data
+			
+
+			for (var i = data.length-1; i > -1; i--) {
+				
+				if (data[i]["Branch"]=="MSc Chemistry"){
+					createCARD(data[i])
+				}
+				
+			}
+
+		}
+		
+	</script>
+
+	
+  </body>
+</html>
