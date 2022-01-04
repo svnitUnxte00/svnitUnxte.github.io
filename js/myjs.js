@@ -178,7 +178,7 @@ function createCARD(dataa){
           </div>
           <div class="fullname">${dataa["Name"]}</div>
           <div class="desctags maintags">&#8226;${dataa["Branch"]+"  &#8226;"+dataa["City"]+"  &#8226;"+dataa["Year of admission"]}</div>
-          ${hostelInfo(dataa)}
+          
           <div class="description">${dataa["About You (~30 words)"]}</div>
           <div class="desctags interests">&#8226;${dataa["3 things you love to do"].toUpperCase().split(", ").join("   &#8226;")}</div>
           <div class="footertags"><a href="https://www.instagram.com/${dataa["Insta Handle (don't use @)"]}" target="blank"}>${"@"+dataa["Insta Handle (don't use @)"]}</a></div>
